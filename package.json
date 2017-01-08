@@ -1,0 +1,31 @@
+{
+  "name": "ityping-api",
+  "version": "1.0.0",
+  "description": "API for ityping",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dremy",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "easy-copy": "^1.0.1",
+    "ioredis": "^2.5.0",
+    "jsonwebtoken": "^7.2.1",
+    "koa": "^2.0.0-alpha.7",
+    "koa-bodyparser": "next",
+    "koa-router": "^7.0.1",
+    "mongoose": "^4.7.6",
+    "some-http-error": "^0.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0"
+  }
+}
