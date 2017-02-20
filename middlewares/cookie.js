@@ -33,7 +33,8 @@ module.exports = async (ctx, next) => {
     const user = await createUser();
     console.log('create user');
     ctx.cookies.set('token', user.token, cookieOptions);
-    ctx.cookies.set('nick', encodeURIComponent(user.nick_name), cookieOptions);
+    ctx.cookies.set('uid', user._id, cookieOptions);
+    //ctx.cookies.set('nick', encodeURIComponent(user.nick_name), cookieOptions);
     ctx.cookie.userId = user._id;
   }
   await next();
