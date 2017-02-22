@@ -10,6 +10,7 @@ const exerciseRecords = new Router();
 
 users
   .get('/', userController.getAllUser)
+  .get('/undefined', userController.getUserFromCookie)
   .param('user_id', userController.assert)
   .get('/:user_id', userController.getUser)
   .put('/:user_id', userController.updateUser)

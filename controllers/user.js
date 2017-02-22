@@ -29,6 +29,10 @@ exports.getUser = async ctx => {
   ctx.body = ctx.user;
 };
 
+exports.getUserFromCookie = async ctx => {
+  ctx.body = await User.getById(ctx.cookie.userId);
+};
+
 exports.getAllUser = async ctx => {
   ctx.body = await User.getAll();
 };
